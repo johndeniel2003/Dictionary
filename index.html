@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f59b89817d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Dictionary</title>
+</head>
+<body>
+    <div class="dictionary-wrapper">
+        <div class="title">
+            <h1>D<span><i class="fa-solid fa-info"></i></span>ctionary</h1>
+            <div class="descript">
+                <p>Discover the power of words at Dictionary. Your go-to source for precise definitions and insightful explanations. Unleash the richness of language with our user-friendly dictionary platform. Elevate your communication skills effortlessly!</p>
+            </div>
+        </div>
+        <div class="search">
+            <div class="suggestion">
+                <ul>
+                    <li  id="suggestion">Fish</li>
+                    <li  id="suggestion">Boring</li>
+                    <li  id="suggestion">Movie</li>
+                    <li  id="suggestion">Stars</li>
+                </ul>
+            </div>
+            <div class="input-area">
+                <div class="form-floating mb-2" id="custom-input">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Search Something">
+                    <label for="floatingInput">Search Something</label>
+                    <button type="button" class="btn" id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </div>
+            </div>
+        </div>
+        <div class="loader-container">
+            <span class="loader"></span>
+        </div>
+        <div class="search-result">
+            <div class="result-label">
+                <p>Search result for "<span id="resultLabel">PROGRAMMING</span>" <i class="fa-solid fa-magnifying-glass"></i></p>
+            </div>
+            <div class="result-area">
+                <div class="search-word"><h3 id="resultLabel">PROGRAMMING</h3></div>
+                <div class="word-definition">
+                    <h3>Definition:</h3>
+                    <p id="word-description">Programming refers to a technological process for telling a computer which tasks to perform in order to solve problems. You can think of programming as a collaboration between humans and computers, in which humans create instructions for a computer to follow (code) in a language computers can understand.</p>
+                    <p><a href="https://en.wikipedia.org/wiki/Program" id="link">Read more about <span id="resultLabel">PROGRAMMING</span></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
